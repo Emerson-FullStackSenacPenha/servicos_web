@@ -12,8 +12,6 @@ $estado = $dados["estado"];
 $hobbies = $dados["hobbies"];
 
 echo "<h1> Cliente </h1>";
-
-
 echo "<b>Nome: </b>".$nome;
 echo "<br>";
 echo "<b>Idade: </b>".$idade;
