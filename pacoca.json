@@ -1,26 +1,28 @@
 {
-
-    "paçocas" :{
-
-        "Paçoca de amendoin":{
-
-            "nome" : "Paçoca de amendoum",
-            "Tipo" : "Doce",
-            "Origem" : "Brasileira",
-            "Nutrientes" : "Paçocativos"
-
+    "pacocas": {
+        "Pa\u00e7oca de amendoim": {
+            "nome": "Pa\u00e7oca de amendoim",
+            "Tipo": "Doce",
+            "Origem": "Brasileira",
+            "Nutrientes": "Pa\u00e7ocativos"
         },
-
-        "Paçoca de chocolate":{
-
-            "nome" : "Paçoca de chocolate",
-            "Tipo" : "Doce",
-            "Origem" : "Brasileira",
-            "Nutrientes" : "Paçocativos ABC+"
-
+        "Pa\u00e7oca de chocolate": {
+            "nome": "Pa\u00e7oca de chocolate",
+            "Tipo": "Doce",
+            "Origem": "Brasileira",
+            "Nutrientes": "Pa\u00e7ocativos ABC+"
+        },
+        "Pa\u00e7oca de Mel": {
+            "nome": "Pa\u00e7oca de Mel",
+            "Tipo": "Doce",
+            "Origem": "Irlanda",
+            "Nutrientes": "Nenhum"
+        },
+        "Pa\u00e7oca de coco": {
+            "nome": "Pa\u00e7oca de coco",
+            "Tipo": "Doce",
+            "Origem": "Havai",
+            "Nutrientes": "Cocoativo"
         }
-
     }
-
-
 }
