@@ -8,23 +8,28 @@ header("Access-Control-Allow-Origin: *");
 
 // Sistemas de serviço web
 
+// Variavel que recebe o que tem no .json que vai para o url
 $pacocas = json_decode( file_get_contents("pacoca.json"), true );
 
-// variavel para guardar o que tem na posição enviada pelo link
+// variavel para guardar o que tem na posição enviada pelo link do cliente.php
 $pacoca_especifica = $_GET['pacocas'];
 
-
-
+// função que decide o que vai ser retornado para o cliente
 switch($pacoca_especifica){
 
+    // Se o "endpoint" for "coco"
     case "coco":
 
-        $pacoca_coco = $pacocas['pacocas']['Paçoca de coco'];
+        // Variavel recebe o parametro de coco
+        $pacoca_coco = $pacocas['pacocas']['pacoca de coco'];
+        // E exibe o resultado que esta dentro do array associativo de Paçoca de coco
+        echo json_encode($pacoca_coco);
 
         break;
 
     default:
 
+        // Caso contrario, exibe o conteúdo todo de "pacocas.json"
         echo json_encode($pacocas);
         
         break;
@@ -59,6 +64,6 @@ function salvar_dados($variavel){
 
 
 // Saída da API
-echo json_encode($pacoca_especifica);
+// echo json_encode($pacoca_especifica);
 
 ?>
