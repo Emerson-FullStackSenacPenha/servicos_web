@@ -3,8 +3,24 @@
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Origin: *");
 
-$paes = json_decode(file_get_contents("pao.json"), true);
+function mostrarPao($param = null) {
 
+    $paes = json_decode(file_get_contents("pao.json"), true);
+
+    if (!$param) { return $paes; }
+
+    $p = explode("-", $param);
+    $key = "Pão ". ($p[0] ?? "");
+
+    return $paes['pães'][$key][($p[1] ?? null)] ?? $paes;
+
+}
+echo json_encode(mostrarPao($_GET['paes'] ?? null));
+
+
+
+
+/*
 $pao_especifico = $_GET['paes'];
 
 switch($pao_especifico){
@@ -140,6 +156,7 @@ switch($pao_especifico){
         break;
 
 }
+*/
 
 function cadastrar_pao($nome, $tipo, $origem, $nutrientes){
 
