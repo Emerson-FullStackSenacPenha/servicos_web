@@ -1,18 +1,18 @@
 {
   "pães": {
-    "Pão francês": {
+    "Pão frances": {
       "nome": "Pão francês",
       "Tipo": "Salgado",
       "Origem": "França",
       "Nutrientes": "Carboidratos, proteínas, fibras"
     },
-    "Pão de forma": {
+    "Pão forma": {
       "nome": "Pão de forma",
       "Tipo": "Salgado",
       "Origem": "Inglaterra",
       "Nutrientes": "Carboidratos, fibras"
     },
-    "Pão de centeio": {
+    "Pão centeio": {
       "nome": "Pão de centeio",
       "Tipo": "Salgado",
       "Origem": "Alemanha",
