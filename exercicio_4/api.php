@@ -15,9 +15,12 @@ function mostrarPao($param = null) {
     return $paes['pães'][$key][($p[1] ?? null)] ?? $paes;
 
 }
-echo json_encode(mostrarPao($_GET['paes'] ?? null));
 
+if ($_SERVER["REQUEST_METHOD"] === "GET") {
 
+    echo json_encode(mostrarPao($_GET['paes'] ?? null));
+
+}
 
 
 /*
