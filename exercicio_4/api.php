@@ -12,6 +12,12 @@ function mostrarPao($param = null) {
     $p = explode("-", $param);
     $key = "Pão ". ($p[0] ?? "");
 
+    if (!isset($p[1])) {
+
+        return $paes['pães'][$key] ?? $paes;
+
+    }
+
     return $paes['pães'][$key][($p[1] ?? null)] ?? $paes;
 
 }
