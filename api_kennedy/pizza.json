@@ -1,0 +1,35 @@
+{
+
+    "Pizzas": {
+
+        "Pizza de Pepperoni": {
+
+            "Nome": "Pizza de Pepperoni",
+            "Tipo": "Salgada",
+            "Origem": "Estadunidense",
+            "Ingredientes": "Molho de Tomate, Pepperoni e Queijo",
+            "Nutricao": "500g Calorias, 26g Gordura, 10g Proteína"
+
+        },
+        "Pizza Sedução": {
+
+            "Nome": "Pizza Sedução",
+            "Tipo": "Doce",
+            "Origem": "Brasileira",
+            "Ingredientes": "Nutella, Morango, Brigadeiro, Confete e Leite Condensado",
+            "Nutricao": "600g Calorias, 50g Gordura, 6g Proteína"
+
+        },
+
+        "Pizza de Frango": {
+
+            "Nome": "Pizza de Frango",
+            "Tipo": "Salgada",
+            "Origem": "Brasileira",
+            "Ingredientes": "Molho de Tomate, Frango Desfiado, Catupiry e Orégano",
+            "Nutricao": "300g Calorias, 15g Gordura, 12g Proteína"
+
+        }
+
+    }
+}

@@ -1,0 +1,54 @@
+Base URL:
+http://localhost/consumo-json/apiGET.php
+
+| Parâmetro | Obrigatório | Valores possíveis                               | Descrição                          |
+| pizza     | Sim         | Pepperoni, Sedução, Frango                      | Nome da pizza que deseja consultar |
+| info      | Não         | Ingredientes, Origem, Nutrição, Tudo (padrão)   | Informação desejada sobre a pizza  |
+
+Exemplos de requisição
+
+1. Consultar os ingredientes da pizza Pepperoni
+
+    http://localhost/consumo-json/apiGET.php?pizza=Pepperoni&info=Ingredientes
+
+2. Consultar todas as informações da pizza Sedução
+
+    http://localhost/consumo-json/apiGET.php?pizza=Sedução&info=Tudo
+
+3. Consultar a nutrição da pizza Frango
+
+    http://localhost/consumo-json/apiGET.php?pizza=Frango&info=Nutrição
+
+Exemplos de Respostas
+
+1. Ingredientes
+
+    {
+    "Ingredientes": ["Mussarela", "Molho de tomate", "Pepperoni"]
+    }
+
+2. Origem
+
+    {
+    "Origem": "Itália"
+    }
+
+3. Nutrição
+
+    {
+    "Nutrição": {"Calorias": 300, "Gordura": 15, "Proteínas": 12}
+    }
+
+4. Tudo
+
+    {
+            "Nome": "Pizza de Frango com Catupiry",
+            "Tipo": "Salgada",
+            "Origem": "Brasileira",
+            "Ingredientes": "Molho de Tomate, Frango Desfiado, Catupiry e Orégano",
+            "Nutrição": "Vitaminas A"
+    }
+
+| Situação                  | Resposta                   |
+| Pizza não encontrada      | Pizza não encontrada`      |
+| Parâmetro `info` inválido | Parâmetro 'Info' inválido! |
