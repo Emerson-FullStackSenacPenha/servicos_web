@@ -12,17 +12,17 @@ $metodo = $_SERVER["REQUEST_METHOD"]; //Guardar o metodo que foi requisitado pel
 switch($metodo){
 
  case "GET":
-     metodoGET();
+        metodoGET();
     break;
 
  case "POST":
-
+        metodoPOST();
     break;
 
  default:
     echo "Método inválido";
 
-}
+};
 
 
 function metodoGET(){
@@ -58,7 +58,23 @@ function metodoGET(){
 
 
 
-}
+};
+
+function metodoPOST(){
+
+    // Guardando uma variavél o conteúdo enviado pela URL, codificando o JSON em um array associativo
+    $novaComida = json_decode( file_get_contents("php://input"), true );
+
+    // Processo de salvar arquivo Json
+    $comidas = json_decode( file_get_contents("comidas.json")  , true );
+
+    $comidas['comidas'] = $novaComida;
+
+    file_put_contents( 'comidas.json', json_encode($comidas, JSON_PRETTY_PRINT) );
+    echo json_encode("Inserimos com sucesso! Problema que apagamos tudo!");
+
+};
+
 
 
 ?>

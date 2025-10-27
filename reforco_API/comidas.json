@@ -1,12 +1,8 @@
 {
- "comidas":{
-    "feijoada":{
-        "ingredientes": "Joelho de porco, feijão preto e Linguiça Paio",
-        "modo de preparo" : "Desalgar as carnes..." 
-    },
-    "cuzcuz":{
-        "ingredientes" : "farinha de milho",
-        "modo de preparo" : "colocar em banho maria por 20 min"
+    "comidas": {
+        "Dobradinha": {
+            "ingredientes": "Bucho de bode, arroz e feij\u00e3o",
+            "Modo de preparo": "Pega o bucho, assa ele, temp\u00e9ra..."
+        }
     }
- }
 }
