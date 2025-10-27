@@ -2,7 +2,7 @@
 
 //Saber na documentação qual a URL
 
-$url = "http://localhost/reforco_api/comidasAPI.php?comida=feijoada";
+$url = "http://localhost/servicos_web/reforco_api/comidasAPI.php?comida=feijoada";
 
 //Requisitar uma resposta da URL
 
