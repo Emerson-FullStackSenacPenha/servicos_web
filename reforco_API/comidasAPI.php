@@ -3,6 +3,8 @@
 //cabeçalho da API - Metadados 
 
 header("Content-Type: application/json; charset=UTF-8");
+
+// Se não quiser que seja publico, colocar a URL de quem vai acessar
 header("Access-Control-Allow-Origin: *");
 
 //SISTEMA DA API
@@ -68,7 +70,7 @@ function metodoPOST(){
     // Processo de salvar arquivo Json
     $comidas = json_decode( file_get_contents("comidas.json")  , true );
 
-    $comidas['comidas'] = $novaComida;
+    $comidas['comidas'] += $novaComida;
 
     file_put_contents( 'comidas.json', json_encode($comidas, JSON_PRETTY_PRINT) );
     echo json_encode("Inserimos com sucesso! Problema que apagamos tudo!");
