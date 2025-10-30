@@ -1,7 +1,9 @@
 <?php
 
 $url = "http://localhost/servicos_web/reforco_API/api_ninja.php";
-$chave_ninja = ['codigo' => 'ABCDE0201'];
+$chave_ninja = ['codigo' => 'ABCDE1234',
+                 'nome' => 'Emerson,'   
+                ];
 
 $estrutura_http = [
 

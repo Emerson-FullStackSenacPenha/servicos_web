@@ -35,7 +35,7 @@ function verificar_codigo_secreto(){
 
     if( $chave_acesso['codigo'] == "ABCDE1234" ) {
 
-        echo json_encode("A mensagem secreta é: Não existe mensagem secreta!");
+        echo json_encode($chave_acesso['nome']."  A mensagem secreta é: Não existe mensagem secreta!");
 
     } else { echo json_encode("Chave de acesso negada!"); }
 
