@@ -1,7 +1,6 @@
 <?php
 
-$url = "http://localhost/servicos_web/exercicio_6/api.php?id=1";
-
+$url = "http://localhost/servicos_web/exercicio_6/api.php?id=2";
 
 $estrutura_http = [
 
@@ -17,7 +16,5 @@ $estrutura_http = [
 $contexto = stream_context_create($estrutura_http);
 $resposta = file_get_contents($url, false, $contexto);
 echo $resposta;
-
-
 
 ?>
