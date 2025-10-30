@@ -16,11 +16,11 @@ function resposta_chefe() {
 
     $comentario = json_decode(file_get_contents("php://input"), true);
 
-    if( $comentario['cliente1']['avaliacao'] == "Gostei" ) {
+    if( $comentario['cliente']['avaliacao'] == "Gostei" ) {
 
-        echo json_encode($comentario['chefeFeliz']);
+        echo json_encode($comentario['chefeFeliz'], JSON_UNESCAPED_UNICODE);
 
-    } else { echo json_encode($comentario['chefeBolado']); }
+    } else { echo json_encode($comentario['chefeBolado'], JSON_UNESCAPED_UNICODE); }
 
 }
 
