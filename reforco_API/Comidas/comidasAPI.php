@@ -1,7 +1,6 @@
 <?php 
 
 //cabeçalho da API - Metadados 
-
 header("Content-Type: application/json; charset=UTF-8");
 
 // Se não quiser que seja publico, colocar a URL de quem vai acessar
@@ -25,7 +24,6 @@ switch($metodo){
     echo "Método inválido";
 
 };
-
 
 function metodoGET(){
 
@@ -76,7 +74,5 @@ function metodoPOST(){
     echo json_encode("Inserimos com sucesso! Problema que apagamos tudo!");
 
 };
-
-
 
 ?>
