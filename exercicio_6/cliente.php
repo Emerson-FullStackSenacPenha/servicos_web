@@ -1,6 +1,6 @@
 <?php
 
-$url = "http://localhost/servicos_web/exercicio_6/api.php?id=2";
+$url = "http://localhost/servicos_web/exercicio_6/api.php?id=1";
 
 $estrutura_http = [
 
