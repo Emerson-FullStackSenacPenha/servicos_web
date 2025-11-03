@@ -1,15 +1,15 @@
 <?php
 
-$url = "http://localhost/servicos_web/reforco_API/api_ninja.php?id=23";
-$ninja = ['codigo' => 'ABCDE1234',
-                 'nome' => 'Jonas,'   
-                ];
+$url = "http://localhost/servicos_web/reforco_API/api_ninja.php";
+$ninja = [
+            'id' => "23",
+];
 
 $estrutura_http = [
 
     'http' => [
 
-        'method' => "PUT",
+        'method' => "DELETE",
         'header' => "Content-Type: application/json\r\n",
         'content' => json_encode($ninja)
 
