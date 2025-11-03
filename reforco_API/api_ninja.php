@@ -16,7 +16,8 @@ switch($metodo){
         break;
         
     case "PUT";
-
+        $id = $_GET['id'];
+        atualizar_lista_ninjas($id);
         break;
         
     case "DELETE";
@@ -40,5 +41,45 @@ function verificar_codigo_secreto(){
     } else { echo json_encode("Chave de acesso negada!" ,JSON_UNESCAPED_UNICODE); }
 
 };
+
+function atualizar_lista_ninjas($id){
+
+    $lista_ninjas = [
+
+        'ninja' => [
+
+            '01' => [
+                
+            'id' => "01",
+            'nome' => "Naruto Uzumaki",
+            'idade' => 12
+
+            ],
+
+            '23' => [
+
+                'id' => "23",
+                'nome' => "gabriel jesus",
+                'idade' => 21
+
+            ]
+
+        ]
+
+    ];
+
+    if($id == $lista_ninjas['ninja']['23']['id']){
+
+        $ninja_atualizado = json_decode( file_get_contents("php://input")  ,true );
+        $lista_ninjas['ninja']['23']['nome'] = $ninja_atualizado['nome'];
+        echo json_encode( $lista_ninjas['ninja']['23']);
+
+    } else {
+
+        echo json_encode("Erro: Nenhum ninja cadastrado com esse ID");
+
+    }             
+
+}
 
 ?>
