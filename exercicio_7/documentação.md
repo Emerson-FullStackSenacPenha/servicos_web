@@ -11,13 +11,9 @@ Localizar: No canto inferior esquerdo, clicar em "Get API Key" (Obter Chave de A
 Ação: Copiar a chave existente ou gerar uma nova.
 
 2. 💻 Configuração do Ambiente e do Código
-Usamos o XAMPP e o VS Code para escrever e rodar o nosso "Cliente":
 
-Local de Trabalho: Salvar o arquivo PHP (ex: cliente.php) dentro da pasta de documentos do XAMPP (htdocs).
+Dentro do código PHP, criar uma variável (ex: $api_key) para guardar a chave obtida no Passo 1.
 
-VS Code: Dentro do código PHP, criar uma variável (ex: $api_key) para guardar a chave obtida no Passo 1.
-
-Servidor Local: Iniciar o módulo Apache no Painel de Controle do XAMPP.
 
 3. 📦 Estruturando a Mensagem (Requisição POST)
 Para falar com a IA, precisamos seguir o formato exato que ela espera.

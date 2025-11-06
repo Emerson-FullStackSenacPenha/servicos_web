@@ -4,7 +4,7 @@
 $chave = "AIzaSyD_2ChLdEOwkD9ki1KMK0gj9cDf257gzoo"; // Substitua pela sua chave REAL
 
 // 2. Defina o endpoint com a chave na URL
-$url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" . $chave;
+$url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=".$chave;
 
 // 3. Defina o prompt (a pergunta para a IA)
 $pergunta = "5 nomes de filmes brasileiros";
