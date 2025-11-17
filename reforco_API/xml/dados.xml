@@ -1,0 +1,21 @@
+<usuarios>
+
+    <usuario>
+        <nome> Emerson de Andrade </nome>
+        <altura> 1.85 </altura>
+        <hobbies>
+            <hobbie>  Assistir Filmes  </hobbie>
+            <hobbie>  Construir sites  </hobbie>
+        </hobbies>
+    </usuario>
+
+    <usuario>
+        <nome> Amélia Martins </nome>
+        <altura> 1.67 </altura>
+        <hobbies>
+            <hobbie>  Desenhar  </hobbie>
+            <hobbie>  Fazer crochê  </hobbie>
+        </hobbies>
+    </usuario>
+
+</usuarios>
